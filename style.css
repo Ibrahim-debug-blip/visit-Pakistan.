@@ -1,0 +1,205 @@
+img
+{
+    width:400px;
+}
+head
+{
+   text-align : center ;
+    font-family : "Times New Roman";
+    background:  pink ;
+    color: wheat;
+}
+body
+{
+    text-align : center ;
+    font-family : "Times New Roman";
+    color: wheat;
+    background-image: linear-gradient(45deg, var(--very-light-col-2), var(--very-light-col));
+background: radial-gradient(circle at top left, #f77f00, transparent 40%),
+            radial-gradient(circle at bottom right, #fcbf49, transparent 35%),
+            linear-gradient(135deg, #003049 0%, #11141a 100%);
+background-color: #11141a;
+
+
+
+
+
+    
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+    min-height: 100vh; 
+    box-sizing: border-box;
+    
+}
+
+a:link {
+  color: #FF0000;
+}
+
+
+a:visited {
+  color: #cef10b;
+}
+
+a:hover {
+  color: #FF00FF;
+}
+
+
+a:active {
+  color: #0000FF;
+}
+mark
+{
+  color:blue
+}
+
+strong
+{
+  color: red;
+}
+button 
+{
+  background-color: White;
+  border: none;
+  color: rgb(228, 15, 15);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+   opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;          
+  cursor: pointer;
+  border: 2px solid #04AA6D;
+  box-shadow:0 8px 16px 0 wheat
+  
+}
+button span 
+{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after 
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span 
+{
+  padding-right: 25px;
+}
+
+button:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+}
+div
+{
+    border: solid 5px white;
+}
+.shake-text {
+  display: inline-block; /* Required for the transform animation to work */
+  animation: shakeEffect 0.5s infinite; /* Runs continuously */
+}
+
+@keyframes shakeEffect {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, 2px); }
+  80% { transform: translate(2px, 1px); }
+  100% { transform: translate(0, 0); }
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+    "a d"
+    "b d"
+    "c d";
+    gap: 10px;
+    margin: 30px;
+    background-color: var(--dark-col);
+}
+
+.first {
+    grid-area: a;
+    background-color: var(--light-col-2);
+    color: var(--dark-col);
+}
+
+.second {
+    grid-area: b;
+    background-color: var(--med-col-2);
+    color: var(--light-col-2);
+}
+
+.third {
+    grid-area: c;
+    background-color: var(--light-col-3);
+    color: var(--dark-col);
+}
+
+.fourth {
+    grid-area: d;
+    background-color: var(--med-col-3);
+    color: var(--light-col-2);
+}
+
+.box {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border: none;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.item {
+    background: var(--med-col);
+    padding: 20px;
+    color: white;
+}
+
+
+@media (max-width: 600px) { /* if screen is 600px or smaller */
+    .flex-container {
+        flex-direction: column; /* change flex-direction of flex-container to column */
+    }
+}
+.social-container {
+    display: flex;            /* Horizontal row layout */
+    flex-direction: row;      /* Left-to-right alignment */
+    justify-content: center;   /* Centers the icons on the page */
+    gap: 30px;                /* Perfect spacing between icons */
+    margin-top: 25px;         /* Separation from elements above */
+}
+
+.social-icon {
+    color: #ffffff;           /* Keeps the icons clean white */
+    font-size: 35px;          /* Clean, easily readable icon sizes */
+    text-decoration: none;    /* Removes any underlines */
+    transition: transform 0.2s, color 0.2s;
+}
+
+/* Hover effects when you point to them */
+.social-icon:hover {
+    transform: scale(1.15);   /* Mild zoom effect */
+    color: #ff4500;           /* Highlights orange on hover to match your background */
+}
