@@ -19,6 +19,12 @@ This repository contains a multi-page static website designed to educate users s
  n.html            # The Great Iqbal Park
  karachi.html      # Introduction of Karachi
  Mazar.html        #Mazar e Quaid
- 
- ref.html     #refrences and links to my social media
+ clifton.html      # Clifton sea view
+ Wazir.html        # Wazir Mansion
+ pa.html           # PAF Museum
+ isl.html          # Introduction of Islamabad city
+ fai.html          # Faisal Mosque
+ mon.html          # Pakistan Monument
+ koh.html          # Damn e koh 
+ mar.html     #refrences and links to my social media
  README.md                # Documentation (this file)
